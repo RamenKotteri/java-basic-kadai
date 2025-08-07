@@ -43,8 +43,10 @@ public class Jyanken_Chapter28 {
 	public String getRandom() {
 		String[] randomChoise = {"r","s","p"};
 		
-		double doubleNumber = Math.random() * 3;
-		int listNumber = (int) doubleNumber;
+		//double doubleNumber = Math.random() * 3;
+		//int listNumber = (int) doubleNumber;
+		int listNumber = (int) Math.floor(Math.random() * 3);
+		
 		return randomChoise[listNumber];
 	
 	}
